@@ -1,6 +1,7 @@
 const triggerWebhook = async () => {
   try {
     const response = await fetch('http://136.52.77.136:4567/webhook', {
+      mode: 'no-cors',
       method: 'POST',
       body: "{}",
       headers: {

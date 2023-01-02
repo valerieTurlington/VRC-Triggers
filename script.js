@@ -2,7 +2,7 @@ const triggerWebhook = async () => {
   try {
     const response = await fetch('http://136.52.77.136:4567/webhook', {
       method: 'POST',
-      body: JSON.stringify({ message: 'Hello, World!' }),
+      body: "{}",
       headers: {
         'Content-Type': 'application/json'
       }

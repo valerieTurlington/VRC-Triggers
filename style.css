@@ -1,1 +1,32 @@
+button {
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* add a rainbow border to the button */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-repeat: no-repeat;
+  animation: rainbow 2s linear infinite;
+}
 
+/* animate the rainbow border */
+@keyframes rainbow {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,48 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <style>
-    .button {
-      /* Button styling */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 60px;
-      background-color: white;
-      border: 2px solid transparent;
-      border-radius: 50%;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      
-      /* Rainbow border animation */
-      border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 2;
-      border-image-slice: 1;
-      transition: border-image-position 1s ease-out;
-      animation: rainbow-border 5s linear infinite;
-    }
-
-    /* Rainbow border animation */
-    @keyframes rainbow-border {
-      from {
-        border-image-position: left;
-      }
-      to {
-        border-image-position: right;
-      }
-    }
-
-    /* Responsive styling */
-    @media (max-width: 600px) {
-      .button {
-        width: 100%;
-        height: 50px;
-        font-size: 16px;
-      }
-    }
-  </style>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
   <body>
     <button id="button">Activate Bunee</button>
     <script src="script.js"></script>
